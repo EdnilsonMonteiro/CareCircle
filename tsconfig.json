@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./src",
+    "paths": {
+      "root/*": ["../*"],
+      "src/*": ["./src/*"],
+      "@env": ["../.env.d.ts"]
+    },
+    "sourceMap": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/ethereum/web3.js"],
+  "exclude": ["node_modules", "srcOld", "capacitor"]
+}
