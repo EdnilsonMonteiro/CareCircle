@@ -17,6 +17,7 @@ import {
   DrawerCloseButton,
   DrawerHeader,
   DrawerBody,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
@@ -27,18 +28,7 @@ export function Header() {
   const theme = useTheme();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 768);
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
     <VStack alignItems="stretch">

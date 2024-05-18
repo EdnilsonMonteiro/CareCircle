@@ -36,6 +36,52 @@ export default {
       return "#E9F9E1"; // Adjusted for the lightest shade
     },
   },
+  secondary: {
+    get 950() {
+      // Adjusted for the darkest shade
+      return "#AE83FF";
+    },
+    get 900() {
+      // Adjusted for very dark shade
+      return "#B695FF";
+    },
+    get 800() {
+      // Adjusted for dark shade
+      return "#C0A9FF";
+    },
+    get 700() {
+      // Adjusted for slightly darker shade
+      return "#CCBBFF";
+    },
+    get 600() {
+      // Adjusted for medium-dark shade
+      return "#D8CEFF";
+    },
+    get 500() {
+      // Base color
+      return "#E1AFFF";
+    },
+    get 400() {
+      // Adjusted for light shade
+      return "#E8C1FF";
+    },
+    get 300() {
+      // Adjusted for lighter shade
+      return "#F0D4FF";
+    },
+    get 200() {
+      // Adjusted for very light shade
+      return "#F7E6FF";
+    },
+    get 100() {
+      // Adjusted for very light shade
+      return "#FCEFF9";
+    },
+    get 50() {
+      // Adjusted for the lightest shade
+      return "#FFFFFF";
+    },
+  },
   neutral: {
     get 900() {
       return "#040405";
@@ -80,13 +126,5 @@ export default {
   },
   success: {
     main: "#10B981",
-  },
-  secondary: {
-    get 400() {
-      return "#39D3D7";
-    },
-    get 500() {
-      return "#1DB6BD";
-    },
   },
 } as const;
