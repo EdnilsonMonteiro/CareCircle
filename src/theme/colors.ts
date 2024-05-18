@@ -122,7 +122,7 @@ export default {
     dark: "#02385C",
   },
   warning: {
-    main: "#EAB308",
+    main: "#FFD644",
   },
   success: {
     main: "#10B981",
