@@ -10,11 +10,11 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-export default function Home() {
+export default function HomePage() {
   const router = useRouter();
 
   const handleCadastroClick = () => {
-    router.push("/cadastro"); // Substitua "/cadastro" pela rota correta para a tela de cadastro
+    router.push("/registerPage");
   };
 
   const handleSaibaMaisClick = () => {
