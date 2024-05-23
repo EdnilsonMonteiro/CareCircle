@@ -1,13 +1,13 @@
-import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
+import { defineStyle, defineStyleConfig } from "@chakra-ui/react";
 
-import text from './text';
+import text from "./text";
 
 const sizes = defineStyle({
   xs: {
-    ...text.variants['body-xs'],
-    h: 'fit-content',
-    width: 'fit-content',
-    minWidth: 'fit-content',
+    ...text.variants["body-xs"],
+    h: "fit-content",
+    width: "fit-content",
+    minWidth: "fit-content",
     py: 2,
     px: 4,
     Icon: {
@@ -16,11 +16,11 @@ const sizes = defineStyle({
     },
   },
   sm: {
-    ...text.variants['body-sm'],
-    h: 'fit-content',
+    ...text.variants["body-sm"],
+    h: "fit-content",
     minH: 9,
-    width: 'fit-content',
-    minWidth: 'fit-content',
+    width: "fit-content",
+    minWidth: "fit-content",
     py: 2,
     px: 4,
     Icon: {
@@ -29,10 +29,10 @@ const sizes = defineStyle({
     },
   },
   md: {
-    ...text.variants['body-md'],
-    h: 'fit-content',
-    width: 'fit-content',
-    minWidth: 'fit-content',
+    ...text.variants["body-md"],
+    h: "fit-content",
+    width: "fit-content",
+    minWidth: "fit-content",
     py: 2,
     px: 6,
     Icon: {
@@ -41,10 +41,10 @@ const sizes = defineStyle({
     },
   },
   lg: {
-    ...text.variants['body-lg'],
-    h: 'fit-content',
-    width: 'fit-content',
-    minWidth: 'fit-content',
+    ...text.variants["body-lg"],
+    h: "fit-content",
+    width: "fit-content",
+    minWidth: "fit-content",
     py: 2,
     px: 8,
     Icon: {
@@ -55,160 +55,160 @@ const sizes = defineStyle({
 });
 
 const solidVariant = defineStyle({
-  fontFamily: 'heading',
-  background: 'active',
-  color: 'primary.50',
-  bgColor: 'primary.500',
+  fontFamily: "heading",
+  background: "active",
+  color: "primary.50",
+  bgColor: "primary.500",
   _hover: {
-    bgColor: 'primary.400',
+    bgColor: "primary.400",
   },
   get _active() {
     return this._hover;
   },
   _focus: {
-    outlineWidth: '2px',
-    outlineStyle: 'solid',
-    outlineColor: 'primary.700',
+    outlineWidth: "2px",
+    outlineStyle: "solid",
+    outlineColor: "primary.700",
   },
   _visited: {
-    bgColor: 'primary.700',
+    bgColor: "primary.700",
   },
   _focusWithin: {
-    outlineWidth: '2px',
-    outlineStyle: 'solid',
-    outlineColor: 'primary.700',
+    outlineWidth: "2px",
+    outlineStyle: "solid",
+    outlineColor: "primary.700",
   },
   _focusVisible: {
-    outlineWidth: '2px',
-    outlineStyle: 'solid',
-    outlineColor: 'primary.700',
+    outlineWidth: "2px",
+    outlineStyle: "solid",
+    outlineColor: "primary.700",
   },
   _disabled: {
-    bgColor: 'primary.300',
-    color: 'primary.50',
+    bgColor: "primary.300",
+    color: "primary.50",
   },
 });
 
 const outlineVariant = defineStyle((props) => ({
-  fontFamily: 'heading',
-  color: 'primary.500',
-  background: 'transparent',
-  borderWidth: '1px',
-  borderStyle: 'solid',
-  borderColor: 'primary.500',
-  '.chakra-button__icon': {
-    color: 'primary.500',
+  fontFamily: "heading",
+  color: "primary.500",
+  background: "transparent",
+  borderWidth: "1px",
+  borderStyle: "solid",
+  borderColor: "primary.500",
+  ".chakra-button__icon": {
+    color: "primary.500",
   },
   _hover: {
-    background: props.colorMode === 'dark' ? 'purple.900' : 'primary.200',
+    background: props.colorMode === "dark" ? "purple.900" : "primary.200",
   },
   _focus: {
-    background: 'primary.300',
-    borderColor: 'primary.700',
+    background: "primary.300",
+    borderColor: "primary.700",
   },
   _active: {
-    borderColor: 'primary.500',
+    borderColor: "primary.500",
   },
   _disabled: {
-    color: 'primary.300',
-    borderColor: 'primary.300',
-    background: 'primary.50',
-    '.chakra-button__icon': {
-      color: 'primary.300',
+    color: "primary.300",
+    borderColor: "primary.300",
+    background: "primary.50",
+    ".chakra-button__icon": {
+      color: "primary.300",
     },
   },
 }));
 
 const ghostVariant = defineStyle((props) => ({
-  fontFamily: 'heading',
-  background: 'transparent',
-  color: 'primary.500',
+  fontFamily: "heading",
+  background: "transparent",
+  color: "primary.500",
   _hover: {
-    background: props.colorMode === 'dark' ? 'primary.500' : 'primary.200',
-    color: props.colorMode === 'dark' ? 'primary.50' : 'primary.500',
-    '.chakra-button__icon': {
-      color: 'primary.500',
+    background: props.colorMode === "dark" ? "primary.500" : "primary.200",
+    color: props.colorMode === "dark" ? "primary.50" : "primary.500",
+    ".chakra-button__icon": {
+      color: "primary.500",
     },
   },
   get _active() {
     return this._hover;
   },
   _disabled: {
-    color: props.colorMode === 'dark' ? 'primary.200' : 'primary.400',
+    color: props.colorMode === "dark" ? "primary.200" : "primary.400",
     _hover: {
-      color: props.colorMode === 'dark' ? 'primary.200' : 'primary.400',
+      color: props.colorMode === "dark" ? "primary.200" : "primary.400",
     },
   },
 }));
 
 const linkVariant = defineStyle({
-  fontFamily: 'heading',
-  color: 'primary.500',
-  '.chakra-button__icon': {
-    color: 'primary.500',
+  fontFamily: "heading",
+  color: "primary.500",
+  ".chakra-button__icon": {
+    color: "primary.500",
   },
-  '::after': {
+  "::after": {
     content: "''",
-    position: 'absolute',
+    position: "absolute",
     left: 0,
-    bottom: '5px',
-    width: '100%',
-    borderBottom: '2px solid',
-    borderColor: 'transparent',
-    transitionProperty: 'all',
-    transitionDuration: '.4s',
-    transitionTimingFunction: 'ease-in-out',
+    bottom: "5px",
+    width: "100%",
+    borderBottom: "2px solid",
+    borderColor: "transparent",
+    transitionProperty: "all",
+    transitionDuration: ".4s",
+    transitionTimingFunction: "ease-in-out",
   },
   _hover: {
-    textDecoration: 'none',
-    '::after': {
-      borderColor: 'primary.500',
+    textDecoration: "none",
+    "::after": {
+      borderColor: "primary.500",
     },
   },
   get _active() {
     return this._hover;
   },
   _focus: {
-    '::after': {
-      borderColor: 'primary.700',
+    "::after": {
+      borderColor: "primary.700",
     },
   },
   _disabled: {
-    color: 'primary.300',
-    '::after': {
-      borderColor: 'primary.300',
+    color: "primary.300",
+    "::after": {
+      borderColor: "primary.300",
     },
-    '.chakra-button__icon': {
-      color: 'primary.300',
+    ".chakra-button__icon": {
+      color: "primary.300",
     },
     _hover: {
-      color: 'primary.100',
+      color: "primary.100",
     },
   },
 });
 
 const navigationVariant = defineStyle({
-  fontFamily: 'heading',
-  color: 'primary.500',
-  '.chakra-button__icon': {
-    color: 'primary.500',
+  fontFamily: "heading",
+  color: "primary.500",
+  ".chakra-button__icon": {
+    color: "primary.500",
   },
   _hover: {
-    textDecoration: 'none',
+    textDecoration: "none",
   },
   get _active() {
     return this._hover;
   },
   _focus: {
-    color: 'primary.700',
+    color: "primary.700",
   },
   _disabled: {
-    color: 'primary.300',
-    '.chakra-button__icon': {
-      color: 'primary.300',
+    color: "primary.300",
+    ".chakra-button__icon": {
+      color: "primary.300",
     },
     _hover: {
-      color: 'primary.100',
+      color: "primary.100",
     },
   },
 });
@@ -222,18 +222,18 @@ const variants = {
 };
 
 const baseStyle = defineStyle({
-  borderRadius: 5,
-  boxSizing: 'border-box',
+  borderRadius: 30,
+  boxSizing: "border-box",
   svg: {
-    color: 'inherit',
+    color: "inherit",
   },
-  transitionProperty: 'all',
-  transitionDuration: '.4s',
-  transitionTimingFunction: 'ease-in-out',
-  '.chakra-button__icon': {
-    transitionProperty: 'all',
-    transitionDuration: '.4s',
-    transitionTimingFunction: 'ease-in-out',
+  transitionProperty: "all",
+  transitionDuration: ".4s",
+  transitionTimingFunction: "ease-in-out",
+  ".chakra-button__icon": {
+    transitionProperty: "all",
+    transitionDuration: ".4s",
+    transitionTimingFunction: "ease-in-out",
   },
 });
 
@@ -242,8 +242,8 @@ const buttonTheme = defineStyleConfig({
   sizes,
   variants,
   defaultProps: {
-    size: 'sm',
-    variant: 'solid',
+    size: "sm",
+    variant: "solid",
   },
 });
 
