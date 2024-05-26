@@ -18,7 +18,7 @@ export default function HomePage() {
   };
 
   const handleSaibaMaisClick = () => {
-    router.push("/saiba-mais"); // Substitua "/saiba-mais" pela rota correta para a tela de saiba mais
+    router.push("/knowMore");
   };
 
   const isMobile = useBreakpointValue({ base: true, md: false });

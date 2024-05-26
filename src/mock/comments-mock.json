@@ -1,0 +1,142 @@
+[
+  {
+    "id": "comment001",
+    "historyId": "abc123xyz456",
+    "comment": "Eu também passei por isso com meu filho. O que ajudou foi fazer compras mais rápidas e levar um brinquedo favorito.",
+    "createdDate": "2024-05-18T10:00:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Carlos Ferreira",
+    "likes": 5,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment002",
+    "historyId": "abc123xyz456",
+    "comment": "Tentei usar fones de ouvido com música suave para acalmar minha filha, talvez funcione para você também.",
+    "createdDate": "2024-05-18T12:15:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Luciana Costa",
+    "likes": 3,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment003",
+    "historyId": "def456uvw789",
+    "comment": "Muito interessante, obrigado por compartilhar sua experiência!",
+    "createdDate": "2024-05-17T17:00:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Bruno Lima",
+    "likes": 8,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment004",
+    "historyId": "def456uvw789",
+    "comment": "Eu tive uma situação semelhante, suas dicas serão muito úteis para mim.",
+    "createdDate": "2024-05-17T18:30:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Mariana Oliveira",
+    "likes": 5,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment005",
+    "historyId": "ghi789rst012",
+    "comment": "Seu relato foi muito inspirador, obrigado por compartilhar!",
+    "createdDate": "2024-05-16T12:00:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Fernanda Martins",
+    "likes": 10,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment006",
+    "historyId": "ghi789rst012",
+    "comment": "Passei por algo parecido recentemente, seu relato me deu novas ideias.",
+    "createdDate": "2024-05-16T13:45:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Ricardo Silva",
+    "likes": 4,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment007",
+    "historyId": "jkl012mno345",
+    "comment": "Eu consegui resolver isso com meu filho usando reforço positivo de forma consistente. Boa sorte!",
+    "createdDate": "2024-05-15T21:00:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Sofia Ribeiro",
+    "likes": 7,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment008",
+    "historyId": "jkl012mno345",
+    "comment": "Você já tentou aumentar a quantidade de exercícios durante o dia? Isso ajudou minha criança.",
+    "createdDate": "2024-05-15T22:30:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Tiago Moreira",
+    "likes": 2,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment009",
+    "historyId": "pqr678stu901",
+    "comment": "Adorei a receita, vou tentar fazer com meus filhos no fim de semana!",
+    "createdDate": "2024-05-14T13:00:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "Juliana Almeida",
+    "likes": 12,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment010",
+    "historyId": "pqr678stu901",
+    "comment": "Fiz a receita ontem e foi um sucesso, obrigado por compartilhar!",
+    "createdDate": "2024-05-14T15:20:00Z",
+    "ownerCategory": "Pais",
+    "ownerName": "André Santos",
+    "likes": 9,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment011",
+    "historyId": "abc123xyz456",
+    "comment": "Como psicóloga, recomendo tentar técnicas de distração e criar uma associação positiva com as idas ao mercado.",
+    "createdDate": "2024-05-18T14:00:00Z",
+    "ownerCategory": "psicólogo",
+    "ownerName": "Dra. Ana Paula",
+    "likes": 6,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment012",
+    "historyId": "abc123xyz456",
+    "comment": "Sou pediatra e já vi casos semelhantes. Às vezes, mudar o horário das compras pode ajudar.",
+    "createdDate": "2024-05-18T15:30:00Z",
+    "ownerCategory": "médico",
+    "ownerName": "Dr. Marcos Silva",
+    "likes": 4,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment013",
+    "historyId": "abc123xyz456",
+    "comment": "Como médica, sugiro consultar um especialista em comportamento infantil para estratégias mais eficazes.",
+    "createdDate": "2024-05-15T23:00:00Z",
+    "ownerCategory": "médico",
+    "ownerName": "Dra. Carla Mendes",
+    "likes": 5,
+    "ownerAvatar": "link_para_avatar"
+  },
+  {
+    "id": "comment014",
+    "historyId": "abc123xyz456",
+    "comment": "Em minha prática como psicóloga, recomendo a técnica de visualização para enfrentar desafios.",
+    "createdDate": "2024-05-16T15:00:00Z",
+    "ownerCategory": "psicólogo",
+    "ownerName": "Dra. Isabel Souza",
+    "likes": 7,
+    "ownerAvatar": "link_para_avatar"
+  }
+]

@@ -22,6 +22,7 @@ import {
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 import { useEffect, useState } from "react";
+import router from "next/router";
 
 export function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -29,6 +30,15 @@ export function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useBreakpointValue({ base: true, md: false });
+
+  const handleLink = (link: string, type?: string) => {
+    let url = `/${link}`;
+    if (type) {
+      url += `?type=${type}`;
+    }
+    console.log(url);
+    router.push(url);
+  };
 
   return (
     <VStack alignItems="stretch">
@@ -41,7 +51,12 @@ export function Header() {
         alignContent="center"
       >
         <VStack>
-          <Box position="relative" width={20}>
+          <Box
+            onClick={() => handleLink("")}
+            position="relative"
+            width={20}
+            cursor="pointer"
+          >
             <Image src="/logo.svg" alt="Logo" width={10} height={10} />
             <Text
               position="absolute"
@@ -57,7 +72,12 @@ export function Header() {
             </Text>
           </Box>
         </VStack>
-        {!isMobile && <MenuLinks layout={isMobile ? "vstack" : "hstack"} />}
+        {!isMobile && (
+          <MenuLinks
+            layout={isMobile ? "vstack" : "hstack"}
+            handleLink={handleLink}
+          />
+        )}
         <HStack alignItems="center">
           <IconButton
             mr={2}
@@ -87,7 +107,10 @@ export function Header() {
             <DrawerCloseButton />
             <DrawerHeader>Menu</DrawerHeader>
             <DrawerBody>
-              <MenuLinks layout={isMobile ? "vstack" : "hstack"} />
+              <MenuLinks
+                layout={isMobile ? "vstack" : "hstack"}
+                handleLink={handleLink}
+              />
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
@@ -98,9 +121,10 @@ export function Header() {
 
 interface MenuLinksProps {
   layout: "vstack" | "hstack";
+  handleLink: (link: string, type?: string) => void;
 }
 
-function MenuLinks({ layout }: MenuLinksProps) {
+function MenuLinks({ layout, handleLink }: MenuLinksProps) {
   const isVStack = layout === "vstack";
 
   return (
@@ -110,13 +134,19 @@ function MenuLinks({ layout }: MenuLinksProps) {
           <Link href="#" cursor="pointer">
             Agendamento
           </Link>
-          <Link href="#" cursor="pointer">
+          <Link
+            onClick={() => handleLink("listHistory", "dica")}
+            cursor="pointer"
+          >
             Dicas
           </Link>
-          <Link href="#" cursor="pointer">
+          <Link
+            onClick={() => handleLink("listHistory", "relato")}
+            cursor="pointer"
+          >
             Relatos
           </Link>
-          <Link href="#" cursor="pointer">
+          <Link onClick={() => handleLink("knowMore")} cursor="pointer">
             Sobre
           </Link>
         </VStack>
@@ -125,13 +155,19 @@ function MenuLinks({ layout }: MenuLinksProps) {
           <Link href="#" cursor="pointer">
             Agendamento
           </Link>
-          <Link href="#" cursor="pointer">
+          <Link
+            onClick={() => handleLink("listHistory", "dica")}
+            cursor="pointer"
+          >
             Dicas
           </Link>
-          <Link href="#" cursor="pointer">
+          <Link
+            onClick={() => handleLink("listHistory", "relato")}
+            cursor="pointer"
+          >
             Relatos
           </Link>
-          <Link href="#" cursor="pointer">
+          <Link onClick={() => handleLink("knowMore")} cursor="pointer">
             Sobre
           </Link>
         </HStack>
