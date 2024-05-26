@@ -18,6 +18,12 @@ import historyMock from "mock/history-mock.json";
 export default function HistoryPage() {
   const router = useRouter();
 
+  const { type } = router.query;
+
+  const filteredHistory = type
+    ? historyMock.filter((item) => item.type === type)
+    : historyMock;
+
   const handleCreateHistory = () => {
     router.push("/createHistory");
   };
@@ -33,10 +39,16 @@ export default function HistoryPage() {
     <DefaultLayout>
       <Grid templateColumns={columns} gap={4}>
         <Box>
-          <Text mb={3} fontSize={"xl"}>
-            Relatos
-          </Text>
-          {historyMock.map((item, index) => (
+          {type == "relato" ? (
+            <>
+              <Text fontSize={"xl"}>Relatos</Text>
+            </>
+          ) : (
+            <>
+              <Text fontSize={"xl"}>Dicas</Text>
+            </>
+          )}
+          {filteredHistory.map((item, index) => (
             <Box
               _hover={{ cursor: "pointer" }}
               onClick={() => handleHistoryClick(item.id)}
@@ -53,8 +65,17 @@ export default function HistoryPage() {
         </Box>
 
         <Box>
-          <Text fontSize={"md"}>Quer criar seu relato também?</Text>
-          <Button onClick={handleCreateHistory}>Criar relato</Button>
+          {type == "relato" ? (
+            <>
+              <Text fontSize={"md"}>Quer criar seu relato também?</Text>
+              <Button onClick={handleCreateHistory}>Criar relato</Button>
+            </>
+          ) : (
+            <>
+              <Text fontSize={"md"}>Quer criar sua dica também?</Text>
+              <Button onClick={handleCreateHistory}>Criar dica</Button>
+            </>
+          )}
         </Box>
       </Grid>
     </DefaultLayout>

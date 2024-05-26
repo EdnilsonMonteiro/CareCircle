@@ -23,8 +23,8 @@ export default function HistoryPage() {
   const { query } = router;
   const historyId = query.historyId as string;
   const [filteredHistory] = historyMock.filter((item) => item.id === historyId);
-  const [filteredComments] = commentsMock.filter(
-    (item) => item.historyId === filteredHistory.id
+  const filteredComments = commentsMock.filter(
+    (item) => item.historyId === historyId
   );
 
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -47,15 +47,18 @@ export default function HistoryPage() {
         )}
       </Box>
       <CreateComments userId="" userAvatar="" />
-      <Comments
-        ownerName={filteredComments.ownerName}
-        ownerAvatar={filteredComments.ownerAvatar}
-        ownerCategory={filteredComments.ownerCategory}
-        historyId={filteredComments.historyId}
-        comment={filteredComments.comment}
-        date={filteredComments.createdDate}
-        id={filteredComments.id}
-      />
+      {filteredComments.map((item, index) => (
+        <Comments
+          key={index}
+          ownerName={item.ownerName}
+          ownerAvatar={item.ownerAvatar}
+          ownerCategory={item.ownerCategory}
+          historyId={item.historyId}
+          comment={item.comment}
+          date={item.createdDate}
+          id={item.id}
+        />
+      ))}
     </DefaultLayout>
   );
 }

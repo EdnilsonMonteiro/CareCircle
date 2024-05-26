@@ -2,7 +2,9 @@
   {
     "id": "abc123xyz456",
     "title": "Minha criança não consegue ir ao mercado sem chorar",
+    "type": "relato",
     "comments": 23,
+    "ownerId": "user001",
     "ownerAvatar": "link_para_avatar",
     "ownerName": "Maria Antonieta",
     "timestamp": "2024-05-18T08:30:00Z",
@@ -12,7 +14,9 @@
   {
     "id": "def456uvw789",
     "title": "Outro título de exemplo",
+    "type": "relato",
     "comments": 10,
+    "ownerId": "user002",
     "ownerAvatar": "link_para_avatar",
     "ownerName": "João da Silva",
     "timestamp": "2024-05-17T15:45:00Z",
@@ -22,7 +26,9 @@
   {
     "id": "ghi789rst012",
     "title": "Mais um relato interessante",
+    "type": "relato",
     "comments": 15,
+    "ownerId": "user003",
     "ownerAvatar": "link_para_avatar",
     "ownerName": "Ana Souza",
     "timestamp": "2024-05-16T10:20:00Z",
@@ -30,23 +36,63 @@
     "description": "Decidi compartilhar este relato interessante porque acredito que pode ser útil para muitas pessoas. Recentemente, passei por uma situação desafiadora que exigiu muita resiliência e criatividade para superar. Vou detalhar cada passo que tomei, as dificuldades que encontrei pelo caminho e como consegui encontrar uma solução eficaz. Este relato serve não apenas como uma documentação da minha jornada, mas também como uma fonte de inspiração para quem pode estar enfrentando desafios semelhantes."
   },
   {
-    "id": "jkl012mno345",
-    "title": "Dificuldades em fazer meu cachorro parar de latir à noite",
+    "id": "user004",
+    "title": "Dificuldades em fazer minha criança ficar quieta à noite",
+    "type": "relato",
     "comments": 8,
+    "ownerId": "medico789",
     "ownerAvatar": "link_para_avatar",
     "ownerName": "Fernanda Oliveira",
     "timestamp": "2024-05-15T19:00:00Z",
     "tags": ["cachorro", "latidos", "comportamento"],
-    "description": "Tenho enfrentado grandes dificuldades para fazer meu cachorro parar de latir durante a noite. Ele é um cão muito ativo e parece que qualquer som ou movimento o deixa em alerta máximo. Isso tem afetado não apenas o meu sono, mas também o dos meus vizinhos. Já tentei diferentes técnicas de treinamento, como reforço positivo, uso de brinquedos para distraí-lo, e até mudanças na rotina de exercícios, mas nada parece funcionar a longo prazo. Gostaria de compartilhar mais detalhes sobre a nossa rotina, as técnicas que já experimentei, e ouvir conselhos de outros donos de cães que passaram por situações semelhantes."
+    "description": "Tenho enfrentado grandes dificuldades para fazer minha criança ficar quieta durante a noite. Ela é uma criança muito ativa e parece que qualquer som ou movimento o deixa em alerta máximo. Isso tem afetado não apenas o meu sono, mas também o dos meus vizinhos. Já tentei diferentes técnicas de treinamento, como reforço positivo, uso de brinquedos para distraí-lo, e até mudanças na rotina de exercícios, mas nada parece funcionar a longo prazo. Gostaria de compartilhar mais detalhes sobre a nossa rotina, as técnicas que já experimentei, e ouvir conselhos de outras mães que passaram por situações semelhantes."
   },
   {
     "id": "pqr678stu901",
     "title": "Receita fácil de bolo de chocolate para fazer com as crianças",
+    "type": "relato",
     "comments": 32,
+    "ownerId": "user009",
     "ownerAvatar": "link_para_avatar",
     "ownerName": "Pedro Lima",
     "timestamp": "2024-05-14T11:10:00Z",
     "tags": ["receita", "bolo", "chocolate", "crianças"],
     "description": "Esta receita de bolo de chocolate é perfeita para fazer com as crianças. É simples, rápida e o resultado é sempre delicioso. Além de passar tempo de qualidade juntos na cozinha, você também ensina às crianças habilidades importantes, como medir ingredientes, misturar, e o valor do trabalho em equipe. A receita começa com a preparação dos ingredientes secos, depois seguimos para os líquidos, e por fim, a mistura de tudo. Durante todo o processo, há várias oportunidades para envolver as crianças, desde quebrar ovos até mexer a massa. Vou detalhar cada etapa, incluindo dicas sobre como manter as crianças seguras e engajadas durante o preparo."
+  },
+  {
+    "id": "mnp123abc456",
+    "type": "dica",
+    "title": "Como lidar com crianças agitadas no mercado",
+    "comments": 15,
+    "ownerId": "user013",
+    "ownerAvatar": "link_para_avatar",
+    "ownerName": "Dr. Carlos Silva",
+    "timestamp": "2024-05-18T10:00:00Z",
+    "tags": ["crianças", "mercado", "comportamento"],
+    "description": "Como médico pediatra, muitas vezes recebo perguntas sobre como lidar com crianças agitadas no mercado. Uma dica importante é tentar manter a criança envolvida durante as compras. Isso pode incluir dar-lhe pequenas tarefas para ajudar, como pegar itens da prateleira ou escolher frutas e legumes. Além disso, é útil estabelecer expectativas claras antes de entrar no mercado e oferecer recompensas por um bom comportamento. Estas são apenas algumas estratégias que podem ajudar a tornar as visitas ao mercado menos estressantes para você e sua criança."
+  },
+  {
+    "id": "qrs456cde789",
+    "type": "dica",
+    "title": "Minha experiência como psicóloga lidando com crianças hiperativas",
+    "comments": 20,
+    "ownerId": "user013",
+    "ownerAvatar": "link_para_avatar",
+    "ownerName": "Dra. Carla Mendes",
+    "timestamp": "2024-05-17T14:30:00Z",
+    "tags": ["crianças", "hiperatividade", "comportamento"],
+    "description": "Como psicóloga infantil, já acompanhei várias crianças hiperativas e suas famílias. Cada caso é único, mas geralmente envolve uma combinação de intervenções comportamentais, apoio emocional e, às vezes, medicação. É importante entender que o que funciona para uma criança pode não funcionar para outra, então é crucial adaptar o tratamento às necessidades individuais. Além disso, envolver a família no processo terapêutico é fundamental para o sucesso a longo prazo. Vou compartilhar algumas histórias de sucesso e dicas práticas que podem ser úteis para outras mães que estão lidando com questões semelhantes."
+  },
+  {
+    "id": "tuv789fgh012",
+    "type": "dica",
+    "title": "Como estabelecer uma rotina noturna para crianças",
+    "comments": 12,
+    "ownerId": "user013",
+    "ownerAvatar": "link_para_avatar",
+    "ownerName": "Dr. Carla Mendes",
+    "timestamp": "2024-05-16T09:20:00Z",
+    "tags": ["crianças", "rotina", "sono"],
+    "description": "Estabelecer uma rotina noturna consistente é fundamental para ajudar as crianças a dormirem melhor. Isso pode incluir atividades relaxantes, como tomar um banho quente, ler uma história ou ouvir música suave. Além disso, é importante criar um ambiente propício ao sono, com temperatura confortável, luzes suaves e ausência de estímulos perturbadores. Evitar telas eletrônicas antes de dormir também pode ajudar a melhorar a qualidade do sono. Vou compartilhar algumas dicas práticas para estabelecer uma rotina noturna eficaz e promover um sono tranquilo para toda a família."
   }
 ]
