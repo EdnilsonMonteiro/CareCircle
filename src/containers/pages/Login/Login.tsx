@@ -21,8 +21,8 @@ export default function LoginPage() {
 
   const theme = useTheme();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = () => {
+    //console.log(data);
   };
 
   return (
