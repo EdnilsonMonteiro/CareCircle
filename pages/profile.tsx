@@ -1,6 +1,6 @@
 import React from "react";
-import Profile from "containers/pages/Profile/index";
+import Profile from "../src/containers/pages/Profile/Profile";
 
 export default function Home() {
-  return <Profile />;
+  return <Profile userId="user008" />;
 }
